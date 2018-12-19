@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DisplayBtnComponent implements OnInit {
   displayText = false;
   clickTime = [];
+  counter = [];
 
   constructor() { }
 
@@ -23,4 +24,7 @@ export class DisplayBtnComponent implements OnInit {
     }
   }
 
+  getColor() {
+    return this.clickTime.length <= 5 ? '' : 'Blue';
+  }
 }
