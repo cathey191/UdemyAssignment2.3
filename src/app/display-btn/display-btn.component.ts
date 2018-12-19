@@ -23,8 +23,4 @@ export class DisplayBtnComponent implements OnInit {
       this.displayText = false;
     }
   }
-
-  getColor() {
-    return this.clickTime.length <= 5 ? '' : 'Blue';
-  }
 }

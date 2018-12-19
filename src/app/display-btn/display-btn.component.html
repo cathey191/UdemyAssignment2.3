@@ -2,8 +2,8 @@
   Display Details
 </button>
 <p *ngIf="displayText">Secret Password = Tuna</p>
-<p 
-  *ngFor="let time of clickTime"
-  [ngStyle]="{backgroundColor: getColor()}">
+<div 
+  *ngFor="let time of clickTime; let i = index" 
+  [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}">
   {{time}}
-</p>
+</div>
