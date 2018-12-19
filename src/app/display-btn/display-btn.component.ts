@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayBtnComponent implements OnInit {
   displayText = false;
+  clickTime = [];
 
   constructor() { }
 
@@ -14,6 +15,7 @@ export class DisplayBtnComponent implements OnInit {
   }
 
   changeBoolean() {
+    this.clickTime.push(new Date());
     if (this.displayText === false) {
       this.displayText = true;
     } else {
