@@ -1,4 +1,4 @@
-<button>
+<button (click)="changeBoolean()">
   Display Details
 </button>
-<p>Secret Password = Tuna</p>
+<p *ngIf="displayText">Secret Password = Tuna</p>
